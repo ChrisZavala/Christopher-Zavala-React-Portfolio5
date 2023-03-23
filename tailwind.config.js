@@ -3,6 +3,10 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+       backgroundColor: {
+        // add your custom colors here
+        'my-blue': '#33658a',
+      },
       screens:{
         xs: "320px",
         sm: "375px",

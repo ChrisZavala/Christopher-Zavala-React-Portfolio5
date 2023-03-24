@@ -36,7 +36,7 @@ const Projects = () => {
         />
         <ProjectsCard
           title="Drinks R Us"
-          des=" Drinks Я US is an application that is designed to find your Cocktail by: Alcohol, Ingredients,
+          des=" Drinks Я US: Alcohol, Ingredients,
                 or Cocktail Name. Designed for people on the move looking for a quick way to access information
                 on how to make their favorite cocktail."
           src={projectThree}
@@ -63,7 +63,7 @@ const Projects = () => {
         <ProjectsCard
           title="Weather Dashboard"
           des=" Created a simple weather dashboard that will run in the browser and feature dynamically updated HTML and CSS.
-                Pick a different city and see the 5-day forecast of that city to help your travels. "
+                Pick a different city and see the 5-day forecast of that city to help your travels. Don't forget to check the forecast."
           src={projectSix}
           githubLink="https://github.com/ChrisZavala/UTA-bootcamp-challenge6"
           liveLink="https://chriszavala.github.io/UTA-bootcamp-challenge6/"

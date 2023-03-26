@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-dom";
-import Banner from "./components/banner/Banner";
+import Home from "./components/home/Home";
 import Contact from "./components/contact/Contact";
 import Features from "./components/features/Features";
 import FooterBottom from "./components/footer/Footer";
@@ -20,7 +20,7 @@ function App() {
               path="/"
               element={
                 <>
-                  <Banner />
+                  <Home />
                   <SocialLinks />
                 </>
               }

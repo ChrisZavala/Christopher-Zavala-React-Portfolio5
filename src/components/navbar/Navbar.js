@@ -40,7 +40,7 @@ const Navbar = () => {
           <FiMenu />
         </span>
         {showMenu && (
-          <div className="w-[80%] h-screen overflow-scroll absolute top-0 left-0 bg-black p-4 scrollbar-hide">
+          <div className="w-full h-screen overflow-scroll absolute top-0 left-0 bg-black p-4 scrollbar-hide">
             <div className="flex flex-col gap-8 py-2 relative">
               <div>
                 <img className="w-32" src={logo} alt="logo" />

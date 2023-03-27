@@ -1,6 +1,7 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Title from '../layouts/Title';
 import ContactLeft from './ContactLeft';
+import { motion } from 'framer-motion';
 
 const Contact = () => {
   return (
@@ -8,7 +9,11 @@ const Contact = () => {
       <div className="flex justify-center items-center text-center">
         <Title title="CONTACT" des="Contact With Me" />
       </div>
-      <div className="w-full">
+      <motion.div className="w-full"
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      exit={{opacity: 0}}
+      >
         <div className="w-full h-auto flex flex-col lg:flex-row justify-between">
           <ContactLeft />
           <div className="w-full lg:w-2/3 xl:w-3/4 flex flex-col gap-8 p-4 lg:p-8 rounded-lg shadow-shadowOne">
@@ -61,7 +66,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
-      </div>
+      </motion.div>
     </section>
   );
 };

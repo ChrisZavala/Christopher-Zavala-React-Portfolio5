@@ -5,6 +5,7 @@ import { HiChip, HiServer } from 'react-icons/hi';
 import { SiAntdesign } from "react-icons/si";
 import Title from '../layouts/Title';
 import Card from './Card';
+import { motion } from 'framer-motion';
 
 const Features = () => {
   return (
@@ -13,7 +14,11 @@ const Features = () => {
       className="w-full py-20 border-b-[1px] border-b-black"
     >
       <Title title="Features" des="What I Do" />
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-20">
+      <motion.div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-20"
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      exit={{opacity: 0}}
+      >
         <Card
           title="System Engineer"
           des="As a system engineer I was responsible for providing advice regarding the appropriate 
@@ -50,7 +55,7 @@ const Features = () => {
           testing and ensuring over-clocked CPU for high performance single threaded applications."
           icon={<FaLaptop />}
         />
-      </div>
+      </motion.div>
     </section>
   );
 }

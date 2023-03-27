@@ -1,10 +1,11 @@
 import React from "react";
 import { bannerImg } from "../../assets";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import { Link } from "react-router-dom";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
+import { Link } from "react-router-dom";
 import { FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiExpress, SiNodedotjs, SiJavascript, SiMongodb } from "react-icons/si";
+import { SiNextdotjs, SiExpress, SiNodedotjs, SiJavascript, SiMongodb } from "react-icons/si";
+import { motion } from "framer-motion";
 
 const Home = () => {
   const [text] = useTypewriter({
@@ -15,14 +16,23 @@ const Home = () => {
     delaySpeed: 2000,
   });
   return (
-    <div name="home" className="h-screen w-full bg-[#212428]">
+    <motion.div
+      name="home"
+      className="h-screen w-full bg-[#212428]"
+      style={{ marginTop: "-30px" }} // adjust the margin-top here
+
+      initial={{ y: -1000, opacity: 0, transition: { duration: 5, delay: 2 } }}
+      animate={{ y: 0, opacity: 1 }}
+      exit={{ y: "-100%", opacity: 0, transition: { duration: 2 } }}
+
+    >
       <div className="max-w-screen-lg mx-auto flex flex-col items-center justify-center h-full px-4 md:flex-row">
         <div className="flex flex-col justify-center h-full">
           <h2 className="text-4xl sm:text-7xl font-bold text-white">
             Christopher Zavala
           </h2>
-          <h2 className="text-4xl font-bold text-[#58C0A9]">
-            <span>{text}</span>
+          <h2 className="text-3xl sm:text-4xl font-bold text-[#58C0A9]">
+            {text}
             <Cursor
               cursorBlinking="false"
               cursorStyle="|"
@@ -30,7 +40,7 @@ const Home = () => {
             />
           </h2>
           <p className="text-gray-500 py-4 max-w-md">
-            I’m a full-stack developer. Currently, I’m focused on building
+            I am a full-stack developer. Currently, I am focused on building
             responsive full-stack web applications. I am also an Electrical
             Engineer. I love to work on web application using technologies like
             Mongoose, Express, React, and Node.
@@ -72,24 +82,16 @@ const Home = () => {
           </div>
         </div>
 
-        <div style={{ position: "relative" }}>
+
+        <div>
           <img
             src={bannerImg}
             alt="my profile"
             className="rounded-2xl mx-auto w-2/3 md:w-full"
-            //style={{ zIndex: 1 }}
           />
-          {/* <div
-            className="absolute bottom-0 left-1/2 transform -translate-x-1/2 w-[350px] h-[300px] lgl:w-[500px] lgl:h-[500px] bg-gradient-to-r from-[#1e2024] to-[#202327] shadow-shadowOne flex justify-center items-center"
-            style={{ zIndex: 0 }}>
-            <div className="absolute bottom-0 w-[350px] h-[300px] lgl:w-[500px] lgl:h-[500px] bg-gradient-to-r from-[#1e2024] to-[#202327] shadow-shadowOne flex justify-center items-center">
-
-            </div>
-          </div> */}
-
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 

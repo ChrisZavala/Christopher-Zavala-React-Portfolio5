@@ -28,15 +28,7 @@
     display: none;
 }
 
-/* Layout classes */
-#parent-container {
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-    position: relative; /* Add this line */
-  }
-  
-  
+
   #footer-container {
     flex: 1;
     display: flex;
@@ -96,10 +88,4 @@
   }
   
   
-  @media screen and (max-width: 768px) {
-    /* styles for screens with a maximum width of 768px */
-  }
-
-  body {
-    overflow-x: hidden;
-  }
+  

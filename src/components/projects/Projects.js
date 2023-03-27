@@ -2,6 +2,7 @@ import React from 'react'
 import Title from '../layouts/Title'
 import { projectOne, projectTwo, projectThree,  projectFour, projectFive, projectSix } from "../../assets/";
 import ProjectsCard from './ProjectsCard';
+import { motion } from 'framer-motion';
 
 const Projects = () => {
   return (
@@ -15,7 +16,11 @@ const Projects = () => {
           des="Portfolio"
         />
       </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
+      <motion.div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14"
+      initial={{opacity: 0}}
+      animate={{opacity: 1}}
+      exit={{opacity: 0}}
+      >
         <ProjectsCard
           title="PlanTracker"
           des=" Plan Tracker is a web based application offering client management services
@@ -68,7 +73,7 @@ const Projects = () => {
           githubLink="https://github.com/ChrisZavala/UTA-bootcamp-challenge6"
           liveLink="https://chriszavala.github.io/UTA-bootcamp-challenge6/"
         />
-      </div>
+      </motion.div>
     </section>
   );
 }

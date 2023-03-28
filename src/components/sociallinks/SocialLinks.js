@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin } from "react-icons/fa";
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 
+
 const SocialLinks = () => {
   const links = [
     {
@@ -42,10 +43,11 @@ const SocialLinks = () => {
           Resume <BsFillPersonLinesFill size={30} />
         </>
       ),
-      href: "https://chriszavala.github.io/UTA-bootcamp-challenge2/assets/docs/ChristopherZavalaResume%20.pdf",
+      href: "https://drive.google.com/file/d/1in65AzcpTZgF1YH4nzNaSrkg6qEN-_6R/view?usp=share_link",
       style: "w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 bg-red-500",
       download: true,
     },
+    
   ];
 
   return (

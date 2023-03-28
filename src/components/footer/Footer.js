@@ -1,5 +1,5 @@
 import React from 'react'
-import { FaMailBulk, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaMailBulk, FaGithub, FaLinkedinIn, FaDochub } from "react-icons/fa";
 import {logo} from "../../assets/index"
 
 const Footer = () => {
@@ -21,6 +21,11 @@ const Footer = () => {
           <span className="bannerIcon">
             <a href="https://www.linkedin.com/in/christopher-zavala-569703268/">
               <FaLinkedinIn />
+            </a>
+          </span>
+          <span className="bannerIcon">
+            <a href="https://chriszavala.github.io/UTA-bootcamp-challenge2/assets/docs/ChristopherZavalaResume%20.pdf">
+              <FaDochub />
             </a>
           </span>
         </div>

@@ -22,7 +22,7 @@ const Projects = () => {
       exit={{opacity: 0}}
       >
         <ProjectsCard
-          title="PlanTracker"
+          title="Plan Tracker"
           des=" Plan Tracker is a web based application offering client management services
                 to personal trainers with features to plan their schedules, store, track,
                 manage client information."
@@ -58,12 +58,12 @@ const Projects = () => {
           liveLink="https://polar-castle-47001.herokuapp.com/"
         />
         <ProjectsCard
-          title="CineMe Trailer"
+          title="CineMe Trailers"
           des=" CineMe Trailer is an extension of CineMe. I just wanted to create a site that would allow you to watch trailers
                 to the movies of your choice. Again this was an extension of CineMe and soon I would like to combine both sites. " 
           src={projectFive}
-          githubLink=""
-          liveLink=""
+          githubLink="https://github.com/ChrisZavala/CineMeTrailer"
+          liveLink="https://chriszavala.github.io/CineMeTrailer/"
         />
         <ProjectsCard
           title="Weather Dashboard"

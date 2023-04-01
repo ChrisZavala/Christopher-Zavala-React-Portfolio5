@@ -24,7 +24,7 @@ const Footer = () => {
             </a>
           </span>
           <span className="bannerIcon">
-            <a href="https://chriszavala.github.io/UTA-bootcamp-challenge2/assets/docs/ChristopherZavalaResume%20.pdf">
+            <a href="https://drive.google.com/file/d/1Fevqwk62CbAIDlCTy7D-i-bDdVkadSS_/view?usp=share_link">
               <FaDochub />
             </a>
           </span>
